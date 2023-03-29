@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LINKS</title>
+        <style>
+            h1 {
+                color:teal;
+                text-align: center;
+                font-size: 36px;
+            }
+            section {
+                color:darkcyan;
+                font-size: 14px;
+                text-align: justify;
+                width: 1000px;
+            }
+            a {
+                color:brown
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 id="top">
+            LINKS
+        </h1>
+        <p>
+            <a href="same-dir.html" title="ur hoveringg">
+                take me to same-dir.html pls
+            </a>
+            <a href="same-dir.html" title="ur hovering againnn">
+                <div>
+                    take me to same-dir.html but DIV
+                </div>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" title="waste ur timeee">
+                YOUTUBE
+            </a>
+        </p>
+
+        <h1>
+            LINKS TO SECTIONS
+        </h1>
+
+        <section>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+                <li><a href="#section5">Section 5</a></li>
+                <li><a href="#section6">Section 6</a></li>
+            </ul>
+        </section>
+        <section id="section1">
+            <h4>Section 1</h4>
+            <p>
+                Okay, so in this lecture, we're going to talk about heading elements and some new HTML5 semantic elements.
+                Play video starting at ::12 and follow transcript0:12
+                First of all, what does the word semantic mean? Well, definition of semantic is relating to meaning in language or logic. In other words, it has some inherent meaning, the names have some inherent meaning. Now when it applies to HTML, what does semantic html element mean? Well, a semantic html element is an element that implies some meaning to the content. In other words, it's an element that tells you something about the content, whether its importance, whether it's a little bit of its description, it basically hints to you to that meaning. Now the reason that's important is because us, humans, and machines can understand the meaning of that content surrounded by a semantic tag much better than if we just surround it with some tag that doesn't really tell us anything other than this is some sort of a division within the document. And also, it may help search engine rankings. In other words, SEO and SEO stands for search engine optimization. Now I stress may here because there is some controversy and disagreement among experts if this is really true. Now experts who disagree with this say that modern search engines are so sophisticated nowadays that just about nothing other than the content itself affects the ranking of the page. So you're welcome to go and Google for the words, do semantic HTML5 tags help SEO, and you could see a lot of discussion on this topic. Now let's take a look at an example of the first type of semantic tags that we're going to look at, the headings. Okay, so here, I'm in Sublime Text and I'm in the examples Lecture06 folder looking at the file called headings.html, and this is a very simple HTML document. It has all the h1 elements, h1, h2, h3 and all the way to the h6 element, well, basically, all the available heading elements. And what these headings are trying to convey is that the heading content between opening h1 and the closing h1 element is the most important heading in the document, and on, and on, and on. So h6 would be also a heading of the document, but it's the least important one of them all. So, let's take a look at what this document looks like in the browser,
+            </p>
+        </section>
+        <section id="section2">
+            <h4>Section 2</h4>
+            <p>
+                In this lecture we're going to talk about HTMLl lists. Now, lists are an incredibly useful HTML structure that allows you to group related content. If you think about it we, as regular people we think of things In terms of lists. To do lists, shopping lists, so on. And therefore it's totally natural that lists appeal
+                Play video starting at ::29 and follow transcript0:29
+                to us as an organization tool. Let's go ahead and jump straight into the code and take a look as to how to implement these lists in HTML.
+                Play video starting at ::38 and follow transcript0:38
+                Okay assignment sublime text and I'm looking at the document called unordered-lists-before.html. And the file is located in the examples lecture 07 folder. And as you can see her we have a list here in front of us, my typical dinner shopping list. Milk Donuts, cookies, some different types of cookies, and then obviously at the end, Pepto Bismol. So what we'd like to do is produce a bulleted list in our HTML document. So if you look at the page right now, the way it looks in the browser, is you can see there is no list. It's just a bunch of spaces in between them. And the reason that is, as I've told you before, all the different new line characters or any other separator characters such as tabs, extra spaces, they're really all ignored by the browser and only one space is honored. And since typically, our shopping list is not something we need to buy in order we can use an unordered list for this example. So the way you create an unordered list is you specify a ul unordered list ul tag around your entire content, and every item within the list Is in li tag, otherwise known as list items. So let's go ahead and indent this and surround every one of these items with and li tag.
+                Play video starting at :1:54 and follow transcript1:54
+                When we get to the cookies item we could see that the cookies item contains more than just the word cookies. It actually contains its own list inside of it. Which means the content of our li should really expand not just the cookies, but expand all the way to chocolate, sugar, and peanut butter.
+                Play video starting at :2:15 and follow transcript2:15
+                And it also means that we need to create another unordered list inside our cookies item.
+                Play video starting at :2:23 and follow transcript2:23
+                Let's go ahead and indent this and we'll surround each one of these items in an li as well.
+                Play video starting at :2:30 and follow transcript2:30
+                Last but not least, Pepto Bismol is supposed to be surrounded by an li tag as well, and that list item really belongs to our original unordered list. So let's save the document, and let's refresh and look at it in a browser. And here we go. We have our unordered list. As the last step, let's make sure that we actually wrote HTML that is valid and we'll cut and paste the HTML into the W3C validator.
+                Play video starting at :3:2 and follow transcript3:02
+
+            </p>
+        </section>
+        <section id="section3">
+            <h4>Section 3</h4>
+            <p>
+                There are many applications for HTML character entity references, however in this lecture, I will concentrate only on a particular problem that the entity references can solve for us. Since HTML uses certain characters for its syntax, we need a way to differentiate between those characters as HTML and those same characters as content. If we want the browser to interpret special HTML characters as regular content, we need a way to escape them. In other words, we need a way to tell the browser not to interpret them as HTML.
+                Play video starting at ::39 and follow transcript0:39
+                Specifically, there are three characters that should always be escaped to make sure they don't cause rendering issues, either right away or down the line. And these characters are the following. The < character, the > character and the &. Instead of using the < character, you should use the HTML entity which starts with & and then followed by lt;. So if you put in your HTML, &lt;, what the browser will interpret this as a < character. And similarly, for the > character, it's &gt;. And for the & it is &amp;. So let's take a look at some HTML to see this concept in action.
+                Play video starting at :1:31 and follow transcript1:31
+                Okay, so we're looking at the document called html-entities-before.html which is located in the examples Lectures08 folder. And this document contains a quote from one of the US presidents, Theodore Roosevelt, which happens to be one of my favorite quotes of his and a very weird looking h1 content. So we can take a look at it, it says don't be afraid to be more;. So let's take a look at what this looks like in the browser.
+            </p>
+        </section>
+        <section id="section4">
+            <h4>Section 4</h4>
+            <p>
+                As you can see, our heading didn't really do so well. It says, Don't be afraid to be more and there's a whole bunch of words missing here. Well the reason this is going on is because the browser is interpreting this left angle bracket as a beginning of a tag. And then it looks at the word then. It doesn't quite understand what kind of a tag that is and basically skips just about everything between the left angle bracket and the right angle bracket and just says the word more. So we could fix that very easily with substituting the < angle bracket with the HTML entity reference.
+                Play video starting at :2:46 and follow transcript2:46
+                And once we're at it, we might as well substitute the other two characters, the & and the >.
+                Play video starting at :2:56 and follow transcript2:56
+                We'll save the document, go reload our webpage, and as you can see, the entire h1 tag content is displayed on the screen.
+                Play video starting at :3:6 and follow transcript3:06
+                In reality, HTML contains a whole ton of different HTML entity references. And obviously we're not going to be able to go through most of them. However, one particularly common one is the copyright symbol. And the main reason why we use an HTML entity reference for it is because it's not really very readily found on any keyboards out there. However, we could very easily put that in. So let's go ahead and put it right here after the year. And the copyright entity reference is just &copy;. So let's save it and reload it in our browser. And here's the copyright symbol that's appearing right after the year and before the word copyright.
+                Play video starting at :3:45 and follow transcript3:45
+                There's another HTML entity reference that is very commonly used and unfortunately, a lot of time misused as well. Let's say for example that in the last sentence here that ends timid souls who neither know victory nor defeat. Let's say we wanted the words victory nor defeat never to wrap, but always stay the same. So, what do I mean by that? Let me pull the browser and make it a little bit less wide. And as you can see, the word victory nor defeat is split up into different lines. Let's say I didn't want that. For whatever visual reason I wanted the words victory nor defeat to always stay the same. So if it is going to wrap, it should either not wrap at all or wrap all together. Well, the way you do that is with a non-breaking space. And the way you use it is nbsp;. Not breaking space, or removing all spaces between the words.
+            </p>
+        </section>
+        <section id="section5">
+            <h4>Section 5</h4>
+            <p>
+                There are many applications for HTML character entity references, however in this lecture, I will concentrate only on a particular problem that the entity references can solve for us. Since HTML uses certain characters for its syntax, we need a way to differentiate between those characters as HTML and those same characters as content. If we want the browser to interpret special HTML characters as regular content, we need a way to escape them. In other words, we need a way to tell the browser not to interpret them as HTML.
+                Play video starting at ::39 and follow transcript0:39
+                Specifically, there are three characters that should always be escaped to make sure they don't cause rendering issues, either right away or down the line. And these characters are the following. The < character, the > character and the &. Instead of using the < character, you should use the HTML entity which starts with & and then followed by lt;. So if you put in your HTML, &lt;, what the browser will interpret this as a < character. And similarly, for the > character, it's &gt;. And for the & it is &amp;. So let's take a look at some HTML to see this concept in action.
+                Play video starting at :1:31 and follow transcript1:31
+                Okay, so we're looking at the document called html-entities-before.html which is located in the examples Lectures08 folder. And this document contains a quote from one of the US presidents, Theodore Roosevelt, which happens to be one of my favorite quotes of his and a very weird looking h1 content. So we can take a look at it, it says don't be afraid to be more;. So let's take a look at what this looks like in the browser.
+            </p>
+        </section>
+        <section>
+            <a name="section6">
+                <h4>Section 6</h4>
+            </a>
+            <p>
+                There are many applications for HTML character entity references, however in this lecture, I will concentrate only on a particular problem that the entity references can solve for us. Since HTML uses certain characters for its syntax, we need a way to differentiate between those characters as HTML and those same characters as content. If we want the browser to interpret special HTML characters as regular content, we need a way to escape them. In other words, we need a way to tell the browser not to interpret them as HTML.
+                Play video starting at ::39 and follow transcript0:39
+                Specifically, there are three characters that should always be escaped to make sure they don't cause rendering issues, either right away or down the line. And these characters are the following. The < character, the > character and the &. Instead of using the < character, you should use the HTML entity which starts with & and then followed by lt;. So if you put in your HTML, &lt;, what the browser will interpret this as a < character. And similarly, for the > character, it's &gt;. And for the & it is &amp;. So let's take a look at some HTML to see this concept in action.
+                Play video starting at :1:31 and follow transcript1:31
+                Okay, so we're looking at the document called html-entities-before.html which is located in the examples Lectures08 folder. And this document contains a quote from one of the US presidents, Theodore Roosevelt, which happens to be one of my favorite quotes of his and a very weird looking h1 content. So we can take a look at it, it says don't be afraid to be more;. So let's take a look at what this looks like in the browser.
+            </p>
+        </section>
+
+        <div>
+            <a href="#top">BACK TO TOP</a>
+        </div>
+    </body>
+</html>
